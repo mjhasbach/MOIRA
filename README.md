@@ -9,7 +9,7 @@ MOIRA is a Node module that retrieves your external IP address asynchronously. I
 
 You may install MOIRA via Node Package Manager as follows:
 
-    npm install MOIRA
+    npm install moira
 
 The source code is available on [GitHub](https://github.com/mjhasbach/MOIRA).
 
