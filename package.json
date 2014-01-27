@@ -1,0 +1,37 @@
+{
+  "name": "moira",
+  "description": "Most Outstanding IP Reporting Assistant",
+  "version": "1.0.1",
+  "homepage": "https://github.com/mjhasbach/MOIRA",
+  "keywords": [
+    "external",
+    "IP",
+    "address",
+	"retrieve",
+	"fetch",
+	"utility"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjhasbach/MOIRA.git"
+  },
+  "author": {
+    "name": "Matthew Hasbach",
+    "email": "hasbach.git@gmail.com",
+    "url": "https://github.com/mjhasbach"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mjhasbach/MOIRA/blob/master/LICENSE.txt"
+    }
+  ],
+  "main": "lib/moira.js",
+  "dependencies": {
+      "request": ">=2.31.0"
+  },
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/mjhasbach/MOIRA/issues"
+  }
+}

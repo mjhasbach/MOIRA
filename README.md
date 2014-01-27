@@ -15,17 +15,24 @@ The source code is available on [GitHub](https://github.com/mjhasbach/MOIRA).
 
 ## Usage ##
 
+Example (see test/test.js)
+
     var moira = require('moira');
-    
-    moira.getIP(function(ip, service) {
-        console.log("Your external IP address is " + ip);
-        console.log("The fastest service to return your IP address was " + service);
+
+    moira.getIP(function(ip, service, err) {
+        if(!err) {
+            console.log("Your external IP address is " + ip);
+            console.log("The fastest service to return your IP address was " + service);
+        } else {
+            console.log("All attempts to retrieve your IP address were exhausted. Is there a problem with your connection?");
+        }
     });
 
-Example Output:
+Callback Arguments
 
-    Your external IP address is 74.125.239.128
-    The fastest service to return your IP address was http://whatismyip.akamai.com/
+    "ip" - String - Validated IPv4 address (e.g. 74.125.239.128)
+    "service" - String - The URL of the IP reporting service that produced the returned IP address (e.g. http://whatismyip.akamai.com/)
+    "err" - Boolean - True when MOIRA was unable to retrieve an IP address
 
 ## Improving MOIRA ##
 
