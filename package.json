@@ -1,7 +1,7 @@
 {
     "name": "moira",
     "description": "Most Outstanding IP Reporting Assistant",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "homepage": "https://github.com/mjhasbach/MOIRA",
     "main": "lib/moira.js",
     "private": false,
