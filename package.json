@@ -1,37 +1,41 @@
 {
-  "name": "moira",
-  "description": "Most Outstanding IP Reporting Assistant",
-  "version": "1.0.5",
-  "homepage": "https://github.com/mjhasbach/MOIRA",
-  "keywords": [
-    "external",
-    "IP",
-    "address",
-	"retrieve",
-	"fetch",
-	"utility"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mjhasbach/MOIRA.git"
-  },
-  "author": {
-    "name": "Matthew Hasbach",
-    "email": "hasbach.git@gmail.com",
-    "url": "https://github.com/mjhasbach"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/mjhasbach/MOIRA/blob/master/LICENSE.txt"
+    "name": "moira",
+    "description": "Most Outstanding IP Reporting Assistant",
+    "version": "1.0.6",
+    "homepage": "https://github.com/mjhasbach/MOIRA",
+    "main": "lib/moira.js",
+    "private": false,
+
+    "keywords": [
+        "external",
+        "IP",
+        "address",
+        "retrieve",
+        "fetch",
+        "utility"
+    ],
+
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mjhasbach/MOIRA.git"
+    },
+
+    "author": {
+        "name": "Matthew Hasbach",
+        "email": "hasbach.git@gmail.com",
+        "url": "https://github.com/mjhasbach"
+    },
+
+    "licenses": [{
+        "type": "MIT",
+        "url": "https://github.com/mjhasbach/MOIRA/blob/master/LICENSE.txt"
+    }],
+
+    "dependencies": {
+        "request": ">= 2.34.0"
+    },
+
+    "bugs": {
+        "url": "https://github.com/mjhasbach/MOIRA/issues"
     }
-  ],
-  "main": "lib/moira.js",
-  "dependencies": {
-      "request": ">=2.31.0"
-  },
-  "private": false,
-  "bugs": {
-    "url": "https://github.com/mjhasbach/MOIRA/issues"
-  }
 }
