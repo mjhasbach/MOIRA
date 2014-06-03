@@ -3,19 +3,19 @@
 
 ### Installation
 
-You may install MOIRA via ```npm``` as follows:
+You may install MOIRA via NPM as follows:
 
     npm install moira
 
 The source code is available on [GitHub](https://github.com/mjhasbach/MOIRA).
 
-### Usage
+### Command
 
 #### moira.getIP( callback( ```err```, ```ip```, ```service``` ))
 
-Retrieve your external IP address asynchronously by requesting it from several different IP-fetching services simultaneously. ```moira.getIP()``` reports the quickest result after verifying that it is a valid IP address. ```err``` is null if an IP address was found. ```ip``` is an IPv4 address. ```service``` is the URL of the IP-reporting service that returned ```ip``` (e.g. http://whatismyip.akamai.com/).
+Retrieve your external IP address asynchronously by requesting it from several different IP-fetching services simultaneously. ```moira.getIP()``` reports the quickest result after verifying that it is a valid IP address and terminating all other requests. ```err``` is null if an IP address was found. ```ip``` is an IPv4 address. ```service``` is the URL of the IP-reporting service that returned ```ip``` (e.g. http://whatismyip.akamai.com/).
 
-Example (see test/test.js):
+Example:
 
     var moira = require( 'moira' );
     
@@ -25,6 +25,10 @@ Example (see test/test.js):
         console.log( 'Your external IP address is ' + ip );
         console.log( 'The fastest service to return your IP address was ' + service );
     });
+
+### Test
+
+    npm test
 
 ### Improving MOIRA
 
