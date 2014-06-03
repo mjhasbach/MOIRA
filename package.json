@@ -6,6 +6,14 @@
     "main": "lib/moira.js",
     "private": false,
 
+    "dependencies": {
+        "request": ">= 2.34.0"
+    },
+
+    "scripts": {
+        "test": "node test/test"
+    },
+
     "keywords": [
         "external",
         "IP",
@@ -30,10 +38,6 @@
         "type": "MIT",
         "url": "https://github.com/mjhasbach/MOIRA/blob/master/LICENSE.txt"
     }],
-
-    "dependencies": {
-        "request": ">= 2.34.0"
-    },
 
     "bugs": {
         "url": "https://github.com/mjhasbach/MOIRA/issues"
